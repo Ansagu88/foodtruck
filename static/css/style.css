@@ -1,0 +1,1172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0 !important;
+  padding-left: 16px !important;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+i {
+  margin-right: 10px !important;
+  margin-left: 10px !important;
+}
+
+/*----------------------------- Navbar Styles Start-------------------------------- */
+
+.main-header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  max-height: fit-content;
+  width: 100%;
+  z-index: 1000;
+}
+
+.main-header .container-fluid .logo-box .logo,
+.main-header .container-fluid,
+.main-header .container-fluid .login-option {
+  display: flex;
+  align-items: center;
+}
+
+.main-header .container-fluid .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-header .container-fluid .logo-box {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main-header .container-fluid .login-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main-header .container-fluid .logo img {
+  width: 280px;
+  height: 90px;
+  margin-top: 1.5rem;
+  padding-left: 30px;
+  padding-top: 5px;
+}
+
+.main-header .container-fluid .logo {
+  width: 50%;
+}
+.main-header .container-fluid .main-location li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  border-radius: 10px;
+  list-style-type: none;
+}
+
+.main-header .container-fluid .login-option {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.main-header .container-fluid .login-option .btn-login {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: gray;
+  border: none;
+  text-decoration: none;
+}
+
+.main-header .container-fluid .login-option .btn-login:hover {
+  color: #45a049;
+}
+
+.main-header .container-fluid .login-option .btn-logout {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #bb0303;
+  border: none;
+  text-decoration: none;
+}
+
+.main-header .container-fluid .login-option .btn-logout:hover {
+  color: gray;
+}
+
+body .main-header .container-fluid .login-option .btn-marketplace {
+  background-color: white;
+  color: #7fb401;
+  border-color: #7fb401 !important;
+  padding: 10px 20px;
+  border-width: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  height: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+body .main-header .container-fluid .login-option .btn-marketplace:hover {
+  background-color: #7fb401;
+  color: white;
+}
+
+body .main-header .container-fluid .login-option .btn-register-vendor {
+  background-color: #7fb401;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  height: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.main-header .container-fluid .logo-box .main-location .location-field {
+  width: 250px;
+  height: 40px;
+  margin-top: 0.8rem;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.main-header .container-fluid .logo-box .main-location .location-field:hover {
+  border: 2px solid green;
+}
+
+#shooping-cart {
+  color: #7fb401;
+}
+
+#cart_counter {
+  background-color: gray;
+  color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: -15px;
+  top: 5px;
+}
+
+.main-header .container-fluid .logo-box .main-location .location-field {
+  position: relative; /* Añade esta línea */
+}
+
+.foodbakery-radius-location {
+  position: absolute;
+  right: 870px; /* Ajusta este valor según sea necesario */
+  top: 78px; /* Ajusta este valor según sea necesario */
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1540px) {
+  .main-header .container-fluid .logo-box .main-location {
+    display: none;
+  }
+
+  .main-header .container-fluid .login-box {
+    width: 70%;
+  }
+
+  .main-header .container-fluid .logo-box {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .main-header .container-fluid .logo-box {
+    justify-content: center;
+  }
+
+  .main-header .container-fluid .logo-box .main-location {
+    display: none;
+  }
+
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  .login-option {
+    justify-content: center;
+  }
+
+  .login-option a {
+    font-size: 14px;
+  }
+
+  .login-option .btn-marketplace,
+  .login-option .btn-register-vendor {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  .row {
+    display: flex;
+  }
+  .main-header .container-fluid .logo-box {
+    flex: 3;
+  }
+
+  .main-header .container-fluid .login-box {
+    flex: 7;
+  }
+
+  .logo {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 465px) and (max-width: 767px) {
+  .main-header .container-fluid .logo-box {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .main-header .container-fluid .logo-box .main-location {
+    display: none;
+  }
+
+  .main-header .container-fluid .login-option {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row {
+    display: flex;
+  }
+  .main-header .container-fluid .logo-box {
+    flex: 5;
+  }
+
+  .main-header .container-fluid .login-box {
+    flex: 5;
+  }
+
+  .logo {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .main-header .container-fluid .row {
+    flex-direction: column;
+  }
+
+  .main-header .container-fluid .login-option {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .main-header .container-fluid .login-option .btn-marketplace {
+    order: -1; /* Esto moverá el botón al principio de la columna */
+    margin-bottom: 10px; /* Añade un poco de espacio debajo del botón */
+    display: block !important;
+  }
+
+  .main-header .container-fluid .login-option .btn-register-vendor {
+    font-size: 16px !important;
+  }
+
+  .main-header .container-fluid .logo-box {
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    width: 100% !important;
+    height: auto;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+/*------------------------------ Navbar Styles End--------------------------------- */
+
+/* -----------------------Main Section Styles Start--------------------------------- */
+
+.page-section {
+  padding-top: 275px;
+  padding-bottom: 275px;
+  margin-bottom: 50px;
+}
+
+.custom-header {
+  font-size: 4.5rem;
+  font-family: "Dancing Script", cursive !important;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+.custom-header .part-1 {
+  color: white !important;
+}
+
+.custom-header .part-2 {
+  color: #7fb401;
+}
+
+.element-title p {
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: left;
+}
+
+.main-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  background-size: cover;
+  margin-top: 70px;
+  border-radius: 10px;
+  list-style-type: none;
+}
+
+.main-search .form-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  list-style-type: none;
+}
+
+.main-search .row {
+  flex: 1;
+  list-style-type: none;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.field-holder ul {
+  margin-bottom: 0;
+}
+
+.main-search .form-search .input-field .field-holder input {
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+}
+
+.main-search .form-search .input-field-radius {
+  width: 170px !important;
+}
+
+#radius {
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  margin-left: 20px;
+  margin-bottom: 14px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.main-search
+  .form-search
+  .input-search-field
+  .field-holder
+  input[type="submit"] {
+  background-color: #7fb401;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  height: 50px;
+}
+
+.foodbakery-locations-fields-group {
+  display: flex;
+  align-items: center;
+}
+
+.foodbakery-search-location-icon {
+  color: #7fb401;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.main-search .form-search .input-field,
+.main-search .form-search .input-field-radius,
+.main-search .form-search .input-search-field {
+  padding-left: 0;
+  padding-right: 0;
+  flex-shrink: 1;
+}
+
+input::-webkit-input-placeholder {
+  padding-left: 10px;
+}
+
+input::-moz-placeholder {
+  padding-left: 10px;
+}
+
+input:-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+input:-moz-placeholder {
+  padding-left: 10px;
+}
+
+#sub-title {
+  font-size: 22px0;
+  color: #2c2c2c;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  .input-field {
+    flex: 1 0 auto;
+    margin-right: 10px;
+  }
+
+  .input-field-radius {
+    width: 100% !important;
+    margin-left: 10px;
+  }
+
+  .input-search-field {
+    flex: 1 0 auto;
+    margin-left: 10px;
+  }
+
+  /* Nuevas reglas CSS */
+  .main-search .form-search .input-search-field {
+    justify-content: center;
+    width: 90%; /* Ocupa todo el ancho disponible */
+    text-align: center; /* Centra el contenido */
+    text-justify: center;
+  }
+
+  .main-search
+    .form-search
+    .input-search-field
+    .field-holder
+    input[type="submit"] {
+    font-size: 25px; /* Aumenta el tamaño de la fuente */
+    width: 40%; /* Reduce el ancho del botón */
+    margin: 0 auto; /* Centra el botón */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-search .form-search .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .main-search .form-search .row .input-field {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .main-search .form-search .row .input-field-radius,
+  .main-search .form-search .row .input-search-field {
+    width: 100%;
+  }
+
+  .icon-location {
+    display: none;
+  }
+
+  .foodbakery-locations-fields-group {
+    flex-direction: column !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+  }
+
+  ul {
+    padding-left: 0 !important;
+    width: 100% !important;
+  }
+
+  #radius {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+/*----------------------- Main Section Styles End -----------------------------*/
+
+/*------------------------ Top Restaurants Section Start------------------------------- */
+
+.page-section .company-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-section .company-logo ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.page-section .company-logo ul li {
+  flex: 1 0 21%;
+  margin: 1%;
+  border: 1px solid #ccc;
+}
+
+.page-section .company-logo ul li figure {
+  margin: 0;
+  padding: 0;
+}
+
+.page-section .company-logo ul li figure a img {
+  width: 100%;
+  height: auto;
+  width: 120px;
+  height: 120px;
+}
+
+/*-------------------------------- Top Restaurants Section End------------------------- */
+
+/*----------------------- Choose From Most Popular Listing Section Start--------------------- */
+
+.page-section .listing.fancy ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.page-section .listing.fancy ul li {
+  flex: 1 0 21%;
+  margin: 1%;
+  border: 1px solid #ccc;
+}
+
+.page-section
+  .listing.fancy
+  ul
+  li
+  .list-post.featured
+  .img-holder
+  figure
+  a
+  img {
+  width: 200px;
+  height: 200px;
+}
+
+.page-section .listing.fancy .list-post.featured .text-holder h5 a {
+  font-size: 1.5em;
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+.page-section .listing.fancy .list-post.featured .text-holder h5 a:hover {
+  color: #7fb401;
+  text-decoration: none;
+}
+
+.page-section .listing.fancy .list-post.featured .list-option .shortlist-btn {
+  color: #2c2c2c;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  .custom-header {
+    font-size: 2rem;
+  }
+
+  .element-title p {
+    font-size: 16px;
+  }
+
+  .main-search .form-search .input-field .field-holder input {
+    height: 40px;
+  }
+
+  /* Añade más estilos según sea necesario */
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Ajustes de estilo para tablets */
+}
+
+/* Estilos para pantallas grandes (laptops y escritorios) */
+@media (min-width: 769px) {
+  /* Ajustes de estilo para laptops y escritorios */
+}
+@media (max-width: 576px) {
+  .custom-header {
+    font-size: 3rem; /* Cambiar el tamaño del texto según sea necesario */
+  }
+}
+.custom-header {
+  overflow: hidden;
+  text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto oculto */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+/*----------------- Choose From Most Popular Listing Section End ----------------------*/
+
+/*--------------------------------------- Login Styles Start--------------------------- */
+
+.container-register-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.container-register-vendor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  background-color: #f7f7f7;
+}
+
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: #f7f7f7;
+}
+
+.container-forgot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: #f7f7f7;
+}
+
+.user-dashboard {
+  color: #2c2c2c;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.field-holder {
+  margin-bottom: 15px;
+}
+
+.field-holder a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.field-holder label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.field-holder input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* ------------------------------Login Styles End------------------------- */
+
+/*---------------------------User/Vendor Nav Styles Start---------------------- */
+
+.user-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.user-nav-list ul li a {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: #2c2c2c;
+  transition: border-bottom 0.1s ease;
+}
+.user-nav-list ul li a:hover {
+  border-bottom: 3px solid #7fb401;
+}
+
+.container .card .card-body a {
+  text-decoration: none;
+  color: #bb0303;
+}
+
+.container .card .card-body a:hover {
+  color: #2c2c2c;
+}
+
+.container .user-dashboard .user-holder .table .text-left a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.container .user-dashboard .restaurant-info .item-thumb img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.container .user-dashboard .table .remove_hour {
+  text-decoration: none;
+  color: #bb0303;
+}
+
+.container .user-dashboard .table .remove_hour:hover {
+  text-decoration: none;
+  color: #2c2c2c;
+  border-bottom: 3px solid #bb0303;
+}
+
+/*---------------------------User/Vendor Nav Styles End---------------------- */
+
+/*----------------------------Vendor Categories Styles Start----------------------------- */
+
+.container .sticky-sidebar .categories-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.container .sticky-sidebar .categories-menu h6 {
+  display: block;
+  margin-bottom: 10px; /* Ajusta este valor a tu gusto */
+}
+
+.container .sticky-sidebar .categories-menu ul li a {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: #2c2c2c;
+  transition: border-bottom 0.1s ease;
+}
+
+.container .sticky-sidebar .categories-menu ul li a:hover {
+  border-bottom: 3px solid #7fb401;
+}
+
+.delivery-timing ul li .reviews-sortby-active {
+  text-decoration: none;
+  color: #2c2c2c;
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.delivery-timing.reviews-sortby ul.delivery-dropdown {
+  background-color: #ffffff; /* Cambia el fondo a blanco */
+  border: 2px solid #ddd; /* Añade un borde */
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.delivery-timing.reviews-sortby ul.delivery-dropdown li a {
+  color: #2c2c2c; /* Cambia el color del texto a gris */
+  text-decoration: none; /* Elimina la decoración del texto */
+}
+
+.delivery-timing.reviews-sortby ul.delivery-dropdown li a:hover {
+  color: #2c2c2c; /* Mantiene el color del texto gris incluso cuando se pasa el ratón por encima */
+}
+
+/*----------------------------Vendor Categories Styles End----------------------------- */
+
+/*---------------------------User Cover Image Styles Start---------------------- */
+
+.page-section.restaurant-detail-image-section {
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.page-section .company-info-detail {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.page-section .company-info {
+  display: flex;
+  align-items: center;
+}
+
+.page-section .company-info .img-holder {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.page-section .company-info .img-holder figure {
+  width: 100%;
+  height: 100%;
+}
+
+.page-section .company-info .img-holder figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-section .company-info .text-holder {
+  flex-grow: 1;
+}
+
+.page-section .company-info .text-holder .restaurant-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.page-section .company-info .text-holder .text {
+  display: flex;
+  align-items: center;
+}
+
+.page-section .company-info .text-holder .text i {
+  margin-right: 10px;
+}
+
+/*---------------------------User Cover Image Styles End---------------------- */
+
+/*----------------------------Cart Styles Start----------------------------- */
+.main-section {
+  padding-top: 50px;
+}
+
+.tabs-holder {
+  color: #2c2c2c;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tabs-holder .stickynav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs-holder .stickynav-tabs li a {
+  color: #555;
+}
+
+.tabs-holder .stickynav-tabs li.active a {
+  color: #2c2c2c;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.tabs-holder .tab-content {
+  padding: 20px;
+}
+
+.menu-itam-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-itam-list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.menu-itam-list ul li .image-holder {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.menu-itam-list ul li .image-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-itam-list ul li .text-holder {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.menu-itam-list ul li .text-holder h6 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menu-itam-list ul li .price-holder {
+  display: flex;
+  align-items: center;
+}
+
+.menu-itam-list ul li .price-holder .price {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.menu-itam-list ul li .price-holder a {
+  color: #2c2c2c;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.menu-itam-list ul li .price-holder a:hover {
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+/*----------------------------Cart Styles End----------------------------- */
+
+/*----------------------------Checkout Styles Start----------------------------- */
+
+.col-lg-6 .form-group {
+  margin-bottom: 20px;
+}
+
+.col-lg-6 .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.col-lg-6 .form-group input,
+.col-lg-6 .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.col-lg-6 .form-group input:focus,
+.col-lg-6 .form-group select:focus {
+  border-color: #f00;
+  outline: none;
+}
+
+.col-lg-6 .form-group .error {
+  color: #f00;
+  font-size: 14px;
+}
+
+/*----------------------------Checkout Styles End----------------------------- */
+
+/*----------------------------- Footer Styles Start---------------------------- */
+
+#footer {
+  position: relative;
+}
+
+#footer.footer-style-2 {
+  background-color: #2c2c2c;
+  padding: 50px 0;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 350;
+  text-align: center;
+}
+
+#footer .widget .fieldset {
+  margin-top: 16px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: space-between;
+  width: 100%;
+}
+
+#footer .widget-newsletter .field-holder {
+  flex: 1;
+  margin-right: 20px;
+  color: #fff;
+  border-radius: 10px;
+  height: 50px;
+}
+
+#footer .widget-newsletter .fieldset input[type="submit"] {
+  margin-top: 7px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 10px;
+  height: 50px;
+  width: 120px;
+  border: none;
+}
+
+#footer .widget-newsletter .fieldset input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#footer .widget-newsletter .fieldset input[type="email"] {
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  border: none;
+  padding: 0 10px;
+}
+
+#footer .widget-newsletter .fieldset input[type="email"] {
+  border-radius: 10px;
+  height: 50px;
+  width: 70%; /* Ajusta el ancho según sea necesario */
+  border: none;
+  padding: 0 10px;
+  margin-right: 10px; /* Espaciado entre el input y el botón */
+}
+
+#footer .widget-newsletter .fieldset input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 10px;
+  height: 50px;
+  width: 20%; /* Ajusta el ancho según sea necesario */
+  border: none;
+  margin-top: 7px;
+}
+
+#footer .widget-contact .fieldset textarea {
+  height: 150px;
+}
+
+#footer .footer-menu {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#footer .footer-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer .footer-menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#footer .footer-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-menu ul li a:hover {
+  color: #7fb401;
+}
+
+#footer .footer-menu ul li:last-child {
+  margin-right: 0;
+}
+
+#footer .copy-right a {
+  color: #7fb401;
+  text-decoration: none;
+}
+#footer-table {
+  background-color: #4caf50;
+}
+/*------------------------------- Footer Styles End------------------- */

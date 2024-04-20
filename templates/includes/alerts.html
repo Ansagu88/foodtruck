@@ -1,0 +1,18 @@
+<div class="notification-container">
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{message.tags}} alert-dismissible show-notification" role="alert">
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+               <h5>{{message}}</h5>
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function() {
+    setTimeout(function() {
+        $(".show-notification").alert('close');
+    }, 5000); // cierra la notificación después de 5 segundos
+});
+</script> 
