@@ -31,7 +31,7 @@ DEBUG = config("DEBUG", cast=bool)
 
 ALLOWED_HOSTS = ['*']
 
-#CSRF_TRUSTED_ORIGINS = []
+CSRF_TRUSTED_ORIGINS = ['FoodTruckLB-1904380096.us-east-2.elb.amazonaws.com', 'foodtrucklb-1904380096.us-east-2.elb.amazonaws.com', ]
 
 # Application definition
 
@@ -197,10 +197,14 @@ AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 AWS_S3_FILE_OVERWRITE = False
 
 # AWS Email Configuration
-EMAIL_BACKEND = "django_ses.SESBackend"
-AWS_SES_REGION_NAME = "us-east-2"
-AWS_SES_REGION_ENDPOINT = "email.us-east-2.amazonaws.com"
-USE_SES_V2 = True
+# settings.py
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'email-smtp.us-east-2.amazonaws.com'  # or whatever your SES SMTP endpoint is
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'AKIATCKAQGFREYC62MXF'
+EMAIL_HOST_PASSWORD = 'BFLv2IqPbv3I35yAwbbW79bKNth5IuMOJFWfHskGi4ZC'
 
 
 # Google Api Key
@@ -213,6 +217,6 @@ SECURE_CROSS_ORIGIN_OPENER_POLICY = "same-origin-allow-popups"
 
 
 # if DEBUG == True:
-#     os.environ['PATH'] = os.path.join(BASE_DIR, 'env\Lib\site-packages\osgeo') + ';' + os.environ['PATH']
-#     os.environ['PROJ_LIB'] = os.path.join(BASE_DIR, 'env\Lib\site-packages\osgeo\data\proj') + ';' + os.environ['PATH']
-#     GDAL_LIBRARY_PATH = os.path.join(BASE_DIR, 'env\Lib\site-packages\osgeo\gdal304.dll')
+#      os.environ['PATH'] = os.path.join(BASE_DIR, 'env\Lib\site-packages\osgeo') + ';' + os.environ['PATH']
+#      os.environ['PROJ_LIB'] = os.path.join(BASE_DIR, 'env\Lib\site-packages\osgeo\data\proj') + ';' + os.environ['PATH']
+#      GDAL_LIBRARY_PATH = os.path.join(BASE_DIR, 'env\Lib\site-packages\osgeo\gdal304.dll')

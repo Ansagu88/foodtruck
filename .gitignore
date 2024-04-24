@@ -269,3 +269,8 @@ pyrightconfig.json
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+#AWS
+FoodTruckKeys.pem
+FoodTruckKeys.pem:Zone.Identifier
+
