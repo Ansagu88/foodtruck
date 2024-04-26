@@ -46,7 +46,7 @@ def send_verification_email(request, user, mail_subject, email_template):
     Returns:
         None
     """
-    from_email = "lilthi.services@gmail.com"
+    from_email = "andecoreing@gmail.com"
     current_site = get_current_site(request)
     message = render_to_string(
         email_template,
@@ -75,7 +75,7 @@ def send_notification(mail_subject, mail_template, context):
     Returns:
         None
     """
-    from_email = "lilthi.services@gmail.com"
+    from_email = "andecoreing@gmail.com"
     message = render_to_string(mail_template, context)
 
     if isinstance(context["to_email"], str):

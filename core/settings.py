@@ -31,7 +31,7 @@ DEBUG = config("DEBUG", cast=bool)
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = ['FoodTruckLB-1904380096.us-east-2.elb.amazonaws.com', 'foodtrucklb-1904380096.us-east-2.elb.amazonaws.com', ]
+CSRF_TRUSTED_ORIGINS = ['http://FoodTruckLB-1904380096.us-east-2.elb.amazonaws.com', 'http://foodtrucklb-1904380096.us-east-2.elb.amazonaws.com', ]
 
 # Application definition
 
@@ -196,15 +196,14 @@ AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
 AWS_S3_FILE_OVERWRITE = False
 
-# AWS Email Configuration
-# settings.py
+# Email Configuration
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'email-smtp.us-east-2.amazonaws.com'  # or whatever your SES SMTP endpoint is
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'AKIATCKAQGFREYC62MXF'
-EMAIL_HOST_PASSWORD = 'BFLv2IqPbv3I35yAwbbW79bKNth5IuMOJFWfHskGi4ZC'
+EMAIL_HOST_USER = 'andecoreing@gmail.com'  # Tu correo
+EMAIL_HOST_PASSWORD = 'mwhd ceth lmii bubc'  # Tu contraseña
 
 
 # Google Api Key
